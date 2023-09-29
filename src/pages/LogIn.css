@@ -1,0 +1,128 @@
+.login-form-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 10px;
+  
+}
+
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #070722;
+}
+
+.form-control {
+  line-height: 1.42857143;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: #233a50 ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control:focus {
+  background-color: #233a50;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  clear: both;
+  line-height: 1;
+  color: #abb7c4;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-style-1 {
+  margin-bottom: 60px;
+  background-color: #0b1a2a;
+  border: 3px solid #0f2133;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-style-1 label {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+
+.form-style-1 input,
+.form-style-1 select {
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  color: #abb7c4;
+  font-weight: 300;
+  text-transform: none;
+  background-color: #233a50;
+  border: 0;
+  border-radius: 3px !important;
+  height: 40px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:before {
+  display: table;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.redBtnSquare {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  background-color: #dd003f;
+  height: 42px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.field-loginform-rememberme label {
+  display: flex;
+  align-items: center;
+}
+
+form [name="LoginForm[rememberMe]"] {
+  width: auto;
+  margin: 0;
+  margin-right: 5px;
+}
+
+element.style {
+  color: #999;
+  margin: 1em 0;
+  text-align: right;
+}
+
+.overlay .close:hover {
+  background-color: #dcf836;
+}

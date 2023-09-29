@@ -1,0 +1,14 @@
+.car-container {
+  width: 75vw;
+}
+
+.genre-name{
+  font-family: 'Dosis',sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}

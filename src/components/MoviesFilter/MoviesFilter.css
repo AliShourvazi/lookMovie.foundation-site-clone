@@ -1,0 +1,126 @@
+* {
+  font-family: "Dosis", sans-serif;
+}
+
+#MoviesFilter {
+  background-color: transparent;
+  /* background-color: red; */
+  width: 100%;
+  height: 150px;
+}
+
+#MoviesFilter .top {
+  text-align: center;
+  font-size: 30px;
+
+  font-weight: bolder;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  color: white;
+}
+
+#MoviesFilter .bottom form {
+  /* background-color: aqua; */
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #MoviesFilter .bottom form  div.selectContainer{ */
+/* background-color: red; */
+/* padding: 10px; */
+/* height: 50px; */
+/* color: aqua; */
+/* width: 20%; */
+/* } */
+
+#MoviesFilter .bottom form div.selectContainer select.selectBox {
+  background: url("./tick.png") 96% / 15% no-repeat #eee;
+  background-color: #414182;
+
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  color: lightgray;
+  border-radius: 10px;
+}
+
+#MoviesFilter .bottom form div.selectContainer select.selectBox option {
+  /* background-color: white; */
+  /* color: #414182; */
+  border-width: 1px 0 0 0;
+  border-color: #fff transparent transparent transparent;
+  padding: 50px 0 0 0;
+}
+
+#geners,
+#years {
+  width: 25%;
+}
+
+#rating {
+  width: 15%;
+}
+
+#type {
+  width: 20%;
+}
+
+#MoviesFilter > .bottom > form > input[type="submit"] {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 5px;
+  background-color: crimson;
+  box-shadow: 1px 1px 3px 0 orangered;
+  transition: 0.3s;
+}
+
+#MoviesFilter > .bottom > form > input[type="submit"]:hover {
+  background-color: rgb(8, 203, 106);
+  box-shadow: 1px 1px 3px 0 rgb(8, 203, 106);
+}
+
+/* 
+#MoviesFilter .bottom form  input[list]{
+
+    width: 20%;
+    padding: 5px 10px;
+    background-color: #1a1a3e;
+    color: white;
+    box-shadow: 1px 1px 3px 0 rgb(42, 42, 42);
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+
+}
+
+#MoviesFilter .bottom form  input[list]::placeholder{
+    color: white;
+}
+
+
+#MoviesFilter .bottom form  input[type="submit"]{
+
+    background-color: red;
+    box-shadow: 1px 1px 3px 0 orangered;
+    border-radius: 5px;
+
+    color: white    ;
+    outline: none;
+    border: none;
+
+    padding: 5px 10px ;
+
+} */

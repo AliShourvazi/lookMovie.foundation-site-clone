@@ -1,0 +1,186 @@
+.movie-item-style-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  position: relative;
+  box-shadow: inset 0 0 54px rgba(52, 58, 62, 0.7),
+    0 0 5px 1px rgba(226, 230, 232, 0.6);
+  background: #233a50;
+  width: 14vw;
+  margin-bottom: 15px;
+}
+
+.movie-item-style-2 {
+  justify-content: flex-start;
+}
+
+.hvr-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #dd003f;
+  text-align: center;
+  margin-top: -15px; /* Half of the desired height (30px) */
+  margin-left: -70px; /* Half of the desired width (140px) */
+  border-radius: 30px;
+  cursor: pointer;
+  width: 140px;
+  height: 30px; /* Set the desired height */
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.hvr-inner a {
+  color: #fff;
+}
+
+.movie-item-style-1:hover .hvr-inner {
+  opacity: 1;
+  width: 150px;
+}
+
+.image__placeholder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+  overflow: hidden;
+}
+
+.movie-item-style-1 .image__placeholder:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+.movie-item-style-1:hover .image__placeholder:after {
+  opacity: 1;
+}
+
+.movie-item-style-2 .mv-item-infor {
+  padding: 0 1em;
+  position: relative;
+  width: 100%;
+}
+
+.movie-item-style-1 img {
+  margin-right: 0;
+  position: absolute;
+  height: 100%;
+  max-width: none;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  width: auto;
+}
+
+.movie-item-style-1 img.is-loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.movie-item-style-2 img {
+  transition: all 0.5s ease-out;
+}
+
+img {
+  opacity: 1;
+}
+
+.quality-tag,
+.movie-item-style-2 .year,
+.movie-item-style-2 .rate {
+  font-size: 12px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: rgba(11, 26, 42, 0.9);
+  padding: 1px 7px;
+  border-radius: 5px;
+}
+
+.quality-tag {
+  right: 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  left: auto;
+  bottom: 0;
+  top: auto;
+  border-radius: 0;
+  background: #79b617;
+  z-index: 3;
+  opacity: 1;
+  cursor: default;
+  width: 45px;
+  text-align: center;
+  font-family: "Dosis", sans-Serif;
+}
+
+.movie-item-style-2 .rate i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.movie-item-style-2 .rate span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.movie-item-style-2 p {
+  margin-bottom: 0;
+}
+
+.movie-item-style-2 p a {
+  color: #4280bf;
+}
+
+.movie-item-style-2 p a:hover {
+  color: #dcf836;
+}
+
+.movie-item-style-2:hover .mv-item-infor h6 a {
+  color: #dcf836;
+}
+
+.movie-item-style-2.movie-item-style-list .rate {
+  position: static;
+  background: transparent;
+  margin: 5px 0;
+}
+
+.movie-item-style-2 .mv-item-infor h6 {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  max-height: 1em;
+  margin: 5px 0;
+  clear: both;
+  line-height: 1;
+}
+
+.movie-item-style-2 .mv-item-infor h6 a {
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,133 @@
+#Carousel {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center */
+  position: relative;
+}
+
+#Carousel .content {
+  position: absolute;
+  padding: 10px 10px 10px 60px;
+  /* background-color: aquamarine; */
+  /* opacity: 0.5; */
+  width: 90%;
+  top: -200px;
+  left: -100px;
+  color: #fff;
+  line-height: 25px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#Carousel .content .left {
+  /* background-color: aqua; */
+  padding: 10px;
+  width: 75%;
+
+  text-align: left;
+}
+
+#Carousel .content .left h5 {
+  font-size: 30px;
+  text-shadow: 3px 2px gray;
+}
+
+#Carousel .content .right {
+  width: 25%;
+  padding: 10px;
+  /* background-color: blanchedalmond; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Carousel .watch,
+#Carousel .trailer {
+  outline: none;
+  border: none;
+  margin: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+#Carousel .watch:hover,
+#Carousel .trailer:hover {
+  transform: scale(1.1);
+}
+#Carousel .watch {
+  background-color: crimson;
+  border-color: crimson;
+  text-shadow: 1px 1px black;
+}
+
+#Carousel .watch:hover {
+  background-color: rgb(8, 203, 106);
+  border-color: rgb(8, 203, 106);
+  box-shadow: 1px 1px 10px 0 rgb(8, 203, 106);
+  text-shadow: none;
+}
+
+#Carousel .trailer {
+  background-color: rgba(200, 200, 200, 0.5);
+  text-shadow: 2px 2px black;
+  opacity: 0.5;
+}
+
+#Carousel .trailer:hover {
+  opacity: 1;
+  text-shadow: none;
+}
+
+/* font-size: 100px; */
+
+#Carousel .tags  {
+  margin: 10px 0;
+  /* display: inline-flex; */
+  flex-direction: row;
+}
+#Carousel div#rating,
+#Carousel div#quality,
+#Carousel div#time {
+  display: inline;
+  /* font-size: 17px; */
+  text-align: center;
+  /* width: 2x; */
+  margin: 0 10px;
+  color: white;
+  border: 2px solid white;
+  /* box-shadow: 1px 1px 1px 0 lightgray; */
+  border-radius: 5px;
+  padding: 3px 15px;
+  font-weight: 600;
+}
+#Carousel div#quality{
+
+  border-color: transparent;
+  background-color: rgb(65, 239, 152);
+}
+
+#Carousel .tags p{
+  display: inline;
+  margin: 0 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-shadow: 0.5px 0.5px lightgray  ;
+}
+
+#Carousel .left > p{
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

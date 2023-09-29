@@ -1,0 +1,267 @@
+/* @import url("https://fonts.cdnfonts.com/css/dosis-3"); */
+
+@font-face {
+  font-family: "Dosis";
+  src: url("Dosis-Light.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+
+* {
+  font-family: "Dosis";
+  box-sizing: border-box;
+}
+.cursor {
+  cursor: pointer;
+}
+
+header {
+  background-color: #001223;
+
+  width: 100%;
+  height: 80px;
+
+  /* display: inline-flex; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ! Left side of Navbar */
+
+header > aside.left {
+  display: inline-flex;
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+}
+
+header > aside.left > aside.left {
+  height: 100%;
+  min-width: 100px;
+  width: 20%;
+  background: url("./logo.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10%;
+
+  /* background-color: red; */
+  /* background-blend-mode: screen; */
+}
+
+header > aside.left div.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+
+header > aside.left div.container section.top {
+  /* background-color: rebeccapurple; */
+  color: white;
+  font-size: 18px;
+  /* display: inline-flex; */
+  height: 50%;
+  min-width: 200px;
+  width: 50%;
+  padding-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+header > aside.left div.container section.top i {
+  /* color: white; */
+  /* text-decoration: underline; */
+  /* font-weight: 300; */
+  border-bottom: 1px solid #d8f72b;
+  font-weight: bold;
+  font-style: none;
+  color: #d8f72b;
+  transition: 0.4s;
+}
+
+header > aside.left div.container section.top i:hover {
+  text-decoration: underline;
+}
+
+header > aside.left div.container section.top span {
+  /* color: white; */
+  font-weight: bold;
+  opacity: 0.6;
+  letter-spacing: 0.4px;
+  transition: 0.3s;
+}
+
+header > aside.left div.container section.top span:hover {
+  color: #d8f72b;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+header > aside.left div.container section.bottom {
+  /* background-color: violet; */
+  font-size: 14px;
+  /* display: inline-flex; */
+  height: 50%;
+  padding-top: 10px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header > aside.left div.container section.bottom .item {
+  color: white;
+  opacity: 0.6;
+  background-color: inherit;
+  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 0 2% 0 2%;
+}
+header > aside.left div.container section.bottom .item:hover {
+  opacity: 1;
+  /* text-decoration: underline; */
+}
+
+/* ! Drop Down list for category */
+
+#categories {
+  z-index: 3;
+  transition: 0.4s;
+}
+
+
+#categories:hover #drop-down  {
+  display: block;
+  color: black;
+}
+
+
+
+header > aside.left section.bottom #drop-down  {
+  display: none;
+  position: absolute;
+  width: 150px;
+
+  padding: 20px 0;
+  background-color: #001223;
+  /* list-style-type: none; */
+  /* text-decoration: none; */
+  /* display: flex; */
+  cursor: auto;
+  transition: 0.4s;
+}
+header > aside.left section.bottom #drop-down li {
+  color: white;
+  
+  text-decoration: none ;
+  margin: 10px 0 5px 10px;
+  cursor: pointer;
+  /* background-color: yellow; */
+  width: fit-content;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+header > aside.left section.bottom #drop-down li:hover {
+  opacity: 1;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+
+
+
+/* ! Right side of NavBar */
+header > aside.right {
+  display: inline-flex;
+  position: absolute;
+  /* background-color: yellow; */
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50vw;
+}
+
+#search {
+  
+  position: relative;
+  height: 55%;
+  width: 400px;
+  max-width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+#search input {
+  /* height: 100%; */
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 10px 25px ;
+  border-radius: 25px;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: #0a355d;
+}
+
+#search input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+#search button {
+ position: absolute; 
+ right: 8px;
+
+ outline: none;
+ border: none;
+ background-color: #001223;
+ border-radius: 15px;
+ color: white;
+ border: 1px solid gray;
+ opacity: 0.8;
+ padding: 5px 10px;
+ transition: 0.3s;
+}
+
+#search button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+header > aside.right > button {
+  border: 2px solid white;
+  background-color: #001223;
+  color: white;
+  opacity: 0.7;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 17px;
+  transition: 0.3s;
+} 
+
+header > aside.right > button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+} 
+
+header > aside.right .item {
+  margin: 0 5px;
+}

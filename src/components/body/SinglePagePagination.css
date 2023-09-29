@@ -1,0 +1,18 @@
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 20px 5px 100px 5px;
+    background-color: #070722;
+}
+
+.pagination a:hover {
+    background-color: #070722;
+}
+
+.pagination .active a {
+    color: yellow;
+    background-color: #070722;
+    border: 2px yellow solid;
+}

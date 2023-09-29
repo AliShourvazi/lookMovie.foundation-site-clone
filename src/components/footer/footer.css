@@ -1,0 +1,105 @@
+div.footer {
+  margin-top: 10px;
+  position: relative;
+  background-color: #001426;
+  width: 100%;
+  height: 20vh;
+}
+
+div.footer > div.bottom {
+  /* background-color: aquamarine; */
+  box-shadow: 1px 1px 10px 0 gray;
+  opacity: 0.6;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+div.footer > div.bottom > p {
+  position: absolute;
+  right: 10%;
+  transition: 0.3s;
+}
+div.footer > div.bottom > p > a {
+  text-decoration: none;
+  opacity: 1;
+  color: white;
+}
+div.footer > div.bottom > p:hover  {
+    /* text-transform: uppercase; */
+    transform: scale(1.1);
+
+}
+
+
+div.footer > div.top {
+  display: flex;
+}
+
+div.footer > div.top > section.left {
+  
+  width: 25%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+div.footer > div.top > section.left div {
+  height: 100px;
+  width: 100px;
+  background-image: url("../body/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+div.footer > div.top > section.middle {
+  width: 60%;
+  /* background-color: aquamarine; */
+  height: 150px;
+  
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+  word-spacing: 4px;
+  padding-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.footer > div.top > aside.right {
+  /* background-color: chartreuse; */
+  height: 150px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+div.footer > div.top > aside.right > .logo {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("tel.png");
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s;
+  cursor: pointer;
+  /* background-attachment: scroll; */
+  /* background-color: red; */
+}
+
+div.footer > div.top > aside.right > .logo:hover {
+  transform: scale(1.1);
+}
+	

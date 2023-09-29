@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+@import url('https://fonts.cdnfonts.com/css/dosis');
+
+body #root{
+    background-color: #070722;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+
+body a {
+    color: #337ab7;
+    text-decoration: none
+}
+
+body a:hover,a:focus {
+    color: #23527c;
+}
+
+body a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
